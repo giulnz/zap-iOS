@@ -8,6 +8,7 @@
 import Bond
 import Foundation
 import Lightning
+import LndConnect
 import ReactiveKit
 import SwiftLnd
 
@@ -94,7 +95,7 @@ final class ConnectRemoteNodeViewModel: NSObject {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let configuration):
-                    self?.remoteNodeConfiguration = configuration
+                    self?.remoteNodeConfiguration = configuration.remoteRPCConfiguration
                     completion(.success(Success()))
                 case .failure(let error):
                     completion(.failure(error))

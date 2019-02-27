@@ -47,7 +47,6 @@
 		AD2D912C21567D4C001015B6 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D912B21567D4C001015B6 /* EventDetailViewController.swift */; };
 		AD308987216F37E700B5489C /* TransactionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD308985216F37E300B5489C /* TransactionServiceTests.swift */; };
 		AD30898B216FA8C400B5489C /* GraphViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD308988216FA88D00B5489C /* GraphViewDataSourceTests.swift */; };
-		AD3781C421661A070083CE77 /* Pem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27B01520FC8BBF00F232A8 /* Pem.swift */; };
 		AD3781CA21664E9E0083CE77 /* LightningConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9DCDC20B453D000AEFC5C /* LightningConnection.swift */; };
 		AD3781CC21664EB00083CE77 /* RemoteRPCConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71EA4820E2318000256307 /* RemoteRPCConfiguration.swift */; };
 		AD3781D02166522E0083CE77 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3781CF2166522E0083CE77 /* Environment.swift */; };
@@ -161,7 +160,6 @@
 		AD3FF6E2221D750F0017E376 /* UnlockWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3FF6E1221D750F0017E376 /* UnlockWalletViewModel.swift */; };
 		AD3FF6E4221D9C5C0017E376 /* GRPCCall+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3FF6E3221D9C5C0017E376 /* GRPCCall+Extensions.swift */; };
 		AD536BEF20E62764002279BC /* Lightning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD536BE620E62763002279BC /* Lightning.framework */; };
-		AD536BF620E62764002279BC /* BTCPayQRCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD536BF520E62764002279BC /* BTCPayQRCodeTests.swift */; };
 		AD536BF820E62764002279BC /* Lightning.h in Headers */ = {isa = PBXBuildFile; fileRef = AD536BE820E62763002279BC /* Lightning.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD536BFB20E62764002279BC /* Lightning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD536BE620E62763002279BC /* Lightning.framework */; };
 		AD536BFC20E62764002279BC /* Lightning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD536BE620E62763002279BC /* Lightning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -176,6 +174,9 @@
 		AD667E572136E622007B9160 /* TimeLockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD667E562136E622007B9160 /* TimeLockStore.swift */; };
 		AD667E5921384966007B9160 /* WindowLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD667E5821384966007B9160 /* WindowLevel.swift */; };
 		AD7123CE2225A51800AA8E7B /* PinStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7123CD2225A51800AA8E7B /* PinStore.swift */; };
+		AD7123D0222679C400AA8E7B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7123CF222679C400AA8E7B /* Result.swift */; };
+		AD7123D222267F8300AA8E7B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7123D122267F8300AA8E7B /* Extensions.swift */; };
+		AD7123D42226848800AA8E7B /* RPCCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7123D32226848800AA8E7B /* RPCCredentials.swift */; };
 		AD79E422219D90E2002589CA /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79E421219D90E2002589CA /* Data+Extensions.swift */; };
 		AD79E424219D90EF002589CA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79E423219D90EF002589CA /* String+Extensions.swift */; };
 		AD7ED61A22085B22007C5F2C /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD060020E67FA5009D9650 /* Environment.swift */; };
@@ -190,11 +191,6 @@
 		AD81C21B21B86A3100FA3FA9 /* SyncPercentageEstimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81C21A21B86A3100FA3FA9 /* SyncPercentageEstimatorTests.swift */; };
 		AD8FE12B214AD42900C00DF2 /* DateEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8FE129214AD3E900C00DF2 /* DateEstimator.swift */; };
 		AD967FD42100D8E80048085B /* CertificateDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD967FD32100D8E80048085B /* CertificateDetailCell.xib */; };
-		AD967FE32105FD770048085B /* BTCPayQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FE22105FD770048085B /* BTCPayQRCode.swift */; };
-		AD967FE5210602C10048085B /* BTCPayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FE4210602C10048085B /* BTCPayConfiguration.swift */; };
-		AD967FE7210603D50048085B /* BTCPayConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FE6210603D50048085B /* BTCPayConfigurationTests.swift */; };
-		AD967FE9210610D90048085B /* RPCConnectQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FE8210610D90048085B /* RPCConnectQRCode.swift */; };
-		AD967FEA2106122E0048085B /* ZapconnectQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D80620B15603008BE461 /* ZapconnectQRCode.swift */; };
 		AD967FF021062AB20048085B /* RPCConnectQRCodeError+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FEF21062AB20048085B /* RPCConnectQRCodeError+Localizable.swift */; };
 		AD967FF8210731110048085B /* PinnedURLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FF7210731110048085B /* PinnedURLSessionDelegate.swift */; };
 		AD9BB2DA21819799009DC878 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB2D921819799009DC878 /* Route.swift */; };
@@ -212,6 +208,16 @@
 		ADA3254221AD8A6200C5EAA2 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3254121AD8A6200C5EAA2 /* Assets.swift */; };
 		ADA3254421AD8D7900C5EAA2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA3254321AD8D7900C5EAA2 /* Colors.xcassets */; };
 		ADA3254621AD8F6200C5EAA2 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3254521AD8F6200C5EAA2 /* StoryboardScenes.swift */; };
+		ADA3A85922253DC200B058FB /* LndConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA3A85722253DC200B058FB /* LndConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADA3A85C22253DC200B058FB /* LndConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA3A85522253DC200B058FB /* LndConnect.framework */; };
+		ADA3A85D22253DC200B058FB /* LndConnect.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADA3A85522253DC200B058FB /* LndConnect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ADA3A86222253DF400B058FB /* LndConnectURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1BB2F21997A820078BCC4 /* LndConnectURL.swift */; };
+		ADA3A86322253DF700B058FB /* Pem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27B01520FC8BBF00F232A8 /* Pem.swift */; };
+		ADA3A86422253DFC00B058FB /* ZapconnectQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6D80620B15603008BE461 /* ZapconnectQRCode.swift */; };
+		ADA3A86622253F0900B058FB /* RPCCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3A86522253F0900B058FB /* RPCCredentials.swift */; };
+		ADA3A86722253F7D00B058FB /* RPCConnectQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FE8210610D90048085B /* RPCConnectQRCode.swift */; };
+		ADA3A86822253F8400B058FB /* BTCPayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FE4210602C10048085B /* BTCPayConfiguration.swift */; };
+		ADA3A86922253F8400B058FB /* BTCPayQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD967FE22105FD770048085B /* BTCPayQRCode.swift */; };
 		ADA3A86B2225842200B058FB /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3A86A2225842200B058FB /* PBKDF2.swift */; };
 		ADA58F8C2200B08A009A5494 /* LightningApiTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA58F8B2200B08A009A5494 /* LightningApiTransformation.swift */; };
 		ADA58F9122031E56009A5494 /* RpcCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA58F9022031E56009A5494 /* RpcCallback.swift */; };
@@ -290,7 +296,6 @@
 		ADF0930F2148FA7300B48853 /* CreateInvoiceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0930E2148FA7300B48853 /* CreateInvoiceEvent.swift */; };
 		ADF093112148FDC600B48853 /* LightningPaymentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF093102148FDC600B48853 /* LightningPaymentEvent.swift */; };
 		ADF093132148FEB900B48853 /* ChannelEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF093122148FEB900B48853 /* ChannelEvent.swift */; };
-		ADF1BB3021997A820078BCC4 /* LndConnectURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1BB2F21997A820078BCC4 /* LndConnectURL.swift */; };
 		ADF1BB33219D7F260078BCC4 /* Macaroon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1BB32219D7F260078BCC4 /* Macaroon.swift */; };
 		ADFB0CC7216E09E00048B63C /* ReceivingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB0CC6216E09E00048B63C /* ReceivingAddress.swift */; };
 		ADFB0CCA216E34540048B63C /* ReceivingAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB0CC8216E318B0048B63C /* ReceivingAddressTests.swift */; };
@@ -358,6 +363,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AD536BE520E62763002279BC;
 			remoteInfo = ZapLightning;
+		};
+		ADA3A85A22253DC200B058FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A059F72013CF960007D1C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA3A85422253DC200B058FB;
+			remoteInfo = LndConnect;
 		};
 		ADADAD6D2143B2E700A48E1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -428,6 +440,7 @@
 				ADADAD792143B2E700A48E1F /* SwiftLnd.framework in Embed Frameworks */,
 				AD536BFC20E62764002279BC /* Lightning.framework in Embed Frameworks */,
 				AD391C2020D16ED4007EE22A /* Library.framework in Embed Frameworks */,
+				ADA3A85D22253DC200B058FB /* LndConnect.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,7 +604,6 @@
 		AD536BE820E62763002279BC /* Lightning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lightning.h; sourceTree = "<group>"; };
 		AD536BE920E62763002279BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD536BEE20E62764002279BC /* LightningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD536BF520E62764002279BC /* BTCPayQRCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCPayQRCodeTests.swift; sourceTree = "<group>"; };
 		AD536BF720E62764002279BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5EA1DF213D826A00AB8031 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD5EA1E1213D827B00AB8031 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -613,6 +625,9 @@
 		AD6F863320DA3C99008C371B /* WalletApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletApiProtocol.swift; sourceTree = "<group>"; };
 		AD6FFCA520AB0A3700B57330 /* OnChainRequestAddressTypeSettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnChainRequestAddressTypeSettingsItem.swift; sourceTree = "<group>"; };
 		AD7123CD2225A51800AA8E7B /* PinStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinStore.swift; sourceTree = "<group>"; };
+		AD7123CF222679C400AA8E7B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AD7123D122267F8300AA8E7B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AD7123D32226848800AA8E7B /* RPCCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCCredentials.swift; sourceTree = "<group>"; };
 		AD71EA4820E2318000256307 /* RemoteRPCConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRPCConfiguration.swift; sourceTree = "<group>"; };
 		AD71EA4A20E2321100256307 /* LndConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LndConstants.swift; sourceTree = "<group>"; };
 		AD77464D2076162300EC596B /* Network+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Localizable.swift"; sourceTree = "<group>"; };
@@ -635,7 +650,6 @@
 		AD967FD32100D8E80048085B /* CertificateDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificateDetailCell.xib; sourceTree = "<group>"; };
 		AD967FE22105FD770048085B /* BTCPayQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCPayQRCode.swift; sourceTree = "<group>"; };
 		AD967FE4210602C10048085B /* BTCPayConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCPayConfiguration.swift; sourceTree = "<group>"; };
-		AD967FE6210603D50048085B /* BTCPayConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCPayConfigurationTests.swift; sourceTree = "<group>"; };
 		AD967FE8210610D90048085B /* RPCConnectQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCConnectQRCode.swift; sourceTree = "<group>"; };
 		AD967FEF21062AB20048085B /* RPCConnectQRCodeError+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RPCConnectQRCodeError+Localizable.swift"; sourceTree = "<group>"; };
 		AD967FF521072D2C0048085B /* Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
@@ -665,6 +679,10 @@
 		ADA3254121AD8A6200C5EAA2 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		ADA3254321AD8D7900C5EAA2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ADA3254521AD8F6200C5EAA2 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		ADA3A85522253DC200B058FB /* LndConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LndConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA3A85722253DC200B058FB /* LndConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LndConnect.h; sourceTree = "<group>"; };
+		ADA3A85822253DC200B058FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA3A86522253F0900B058FB /* RPCCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCCredentials.swift; sourceTree = "<group>"; };
 		ADA3A86A2225842200B058FB /* PBKDF2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBKDF2.swift; sourceTree = "<group>"; };
 		ADA58F8B2200B08A009A5494 /* LightningApiTransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningApiTransformation.swift; sourceTree = "<group>"; };
 		ADA58F9022031E56009A5494 /* RpcCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RpcCallback.swift; sourceTree = "<group>"; };
@@ -872,6 +890,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADEB61AF2216CD7D009D5707 /* Logger.framework in Frameworks */,
+				ADA3A85C22253DC200B058FB /* LndConnect.framework in Frameworks */,
 				ADADAD782143B2E700A48E1F /* SwiftLnd.framework in Frameworks */,
 				A02C9FC2202F5BDC009821B1 /* LocalAuthentication.framework in Frameworks */,
 				AD536BFB20E62764002279BC /* Lightning.framework in Frameworks */,
@@ -904,6 +923,13 @@
 			files = (
 				AD536BEF20E62764002279BC /* Lightning.framework in Frameworks */,
 				508C114BE3C2C3584AB55069 /* Pods_LightningTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA3A85222253DC200B058FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1120,6 +1146,7 @@
 				CEF2960C33901153F2C1FFF4 /* Frameworks */,
 				AD391C1920D16ED4007EE22A /* Library */,
 				AD536BE720E62763002279BC /* Lightning */,
+				ADA3A85622253DC200B058FB /* LndConnect */,
 				ADEB61A92216CD7D009D5707 /* Logger */,
 				1084CFF47F1CDB628A05D07A /* Pods */,
 				A0A05A002013CF960007D1C9 /* Products */,
@@ -1141,6 +1168,7 @@
 				ADADAD6B2143B2E700A48E1F /* SwiftLndTests.xctest */,
 				ADFBE0BE21F6268400A76E06 /* Sticker.appex */,
 				ADEB61A82216CD7D009D5707 /* Logger.framework */,
+				ADA3A85522253DC200B058FB /* LndConnect.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1191,6 +1219,7 @@
 				ADADAD59214126BB00A48E1F /* Date.swift */,
 				AD9BB2DF21836A54009DC878 /* DispatchQueue+Debounce.swift */,
 				AD77464C2076161300EC596B /* Localizable */,
+				AD7123D32226848800AA8E7B /* RPCCredentials.swift */,
 				A0BD44DB206FCAD900BF27A3 /* SignalProtocol.swift */,
 				A0A96B87201769F100788808 /* String.swift */,
 				AD131B1520CFA0AD00E6FED3 /* UIAlertController.swift */,
@@ -1378,7 +1407,6 @@
 				ADD9DCDC20B453D000AEFC5C /* LightningConnection.swift */,
 				ADEF96BB21078C31006AE1EC /* Certificates */,
 				AD28844221281F9E003C3D94 /* Invoice */,
-				AD967FE12105FD400048085B /* QrCodes */,
 				A07C1034203DE3D0006C7FE8 /* Services */,
 				ADFB36F121466AF200146FCC /* SQLite */,
 				AD536BF420E62764002279BC /* Tests */,
@@ -1391,8 +1419,6 @@
 			children = (
 				AD536BF720E62764002279BC /* Info.plist */,
 				AD66377720F39A7700284E2B /* Bolt11Tests.swift */,
-				AD967FE6210603D50048085B /* BTCPayConfigurationTests.swift */,
-				AD536BF520E62764002279BC /* BTCPayQRCodeTests.swift */,
 				ADC48CA6214AD8B800949CD9 /* DateEstimatorTests.swift */,
 				AD28844C21284DAC003C3D94 /* InvoiceTests.swift */,
 				A0733CD920471F0A0005643A /* LightningInvoiceURITests.swift */,
@@ -1505,19 +1531,6 @@
 			path = CertificateDetail;
 			sourceTree = "<group>";
 		};
-		AD967FE12105FD400048085B /* QrCodes */ = {
-			isa = PBXGroup;
-			children = (
-				AD967FE4210602C10048085B /* BTCPayConfiguration.swift */,
-				AD967FE22105FD770048085B /* BTCPayQRCode.swift */,
-				ADF1BB2F21997A820078BCC4 /* LndConnectURL.swift */,
-				AD27B01520FC8BBF00F232A8 /* Pem.swift */,
-				AD967FE8210610D90048085B /* RPCConnectQRCode.swift */,
-				ADD6D80620B15603008BE461 /* ZapconnectQRCode.swift */,
-			);
-			path = QrCodes;
-			sourceTree = "<group>";
-		};
 		AD99C9EB209072530061C565 /* QRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -1571,6 +1584,24 @@
 				ADA3253F21AD5B3300C5EAA2 /* Strings.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		ADA3A85622253DC200B058FB /* LndConnect */ = {
+			isa = PBXGroup;
+			children = (
+				ADA3A85722253DC200B058FB /* LndConnect.h */,
+				ADA3A85822253DC200B058FB /* Info.plist */,
+				ADA3A86522253F0900B058FB /* RPCCredentials.swift */,
+				ADF1BB2F21997A820078BCC4 /* LndConnectURL.swift */,
+				AD967FE4210602C10048085B /* BTCPayConfiguration.swift */,
+				AD967FE22105FD770048085B /* BTCPayQRCode.swift */,
+				AD27B01520FC8BBF00F232A8 /* Pem.swift */,
+				AD967FE8210610D90048085B /* RPCConnectQRCode.swift */,
+				ADD6D80620B15603008BE461 /* ZapconnectQRCode.swift */,
+				AD7123CF222679C400AA8E7B /* Result.swift */,
+				AD7123D122267F8300AA8E7B /* Extensions.swift */,
+			);
+			path = LndConnect;
 			sourceTree = "<group>";
 		};
 		ADA58F8D2201ED23009A5494 /* Macaroon */ = {
@@ -1950,6 +1981,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADA3A85022253DC200B058FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA3A85922253DC200B058FB /* LndConnect.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADADAD602143B2E700A48E1F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1992,6 +2031,7 @@
 				ADADAD772143B2E700A48E1F /* PBXTargetDependency */,
 				ADFBE0C421F6268500A76E06 /* PBXTargetDependency */,
 				ADEB61AE2216CD7D009D5707 /* PBXTargetDependency */,
+				ADA3A85B22253DC200B058FB /* PBXTargetDependency */,
 			);
 			name = Zap;
 			productName = ThunderWallet;
@@ -2058,6 +2098,24 @@
 			productName = ZapLightningTests;
 			productReference = AD536BEE20E62764002279BC /* LightningTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADA3A85422253DC200B058FB /* LndConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA3A86122253DC200B058FB /* Build configuration list for PBXNativeTarget "LndConnect" */;
+			buildPhases = (
+				ADA3A85022253DC200B058FB /* Headers */,
+				ADA3A85122253DC200B058FB /* Sources */,
+				ADA3A85222253DC200B058FB /* Frameworks */,
+				ADA3A85322253DC200B058FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LndConnect;
+			productName = LndConnect;
+			productReference = ADA3A85522253DC200B058FB /* LndConnect.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		ADADAD622143B2E700A48E1F /* SwiftLnd */ = {
 			isa = PBXNativeTarget;
@@ -2190,6 +2248,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = A0A059FE2013CF960007D1C9;
 					};
+					ADA3A85422253DC200B058FB = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
 					ADADAD622143B2E700A48E1F = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
@@ -2270,6 +2332,7 @@
 				ADADAD622143B2E700A48E1F /* SwiftLnd */,
 				ADADAD6A2143B2E700A48E1F /* SwiftLndTests */,
 				ADFBE0BD21F6268400A76E06 /* Sticker */,
+				ADA3A85422253DC200B058FB /* LndConnect */,
 			);
 		};
 /* End PBXProject section */
@@ -2338,6 +2401,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AD536BEC20E62764002279BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA3A85322253DC200B058FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2916,6 +2986,7 @@
 				AD391C9920D16FA8007EE22A /* QRCodeScannerStrategy.swift in Sources */,
 				AD391D0520D16FF5007EE22A /* BalanceView.swift in Sources */,
 				AD391D0B20D16FF5007EE22A /* LineView.swift in Sources */,
+				AD7123D42226848800AA8E7B /* RPCCredentials.swift in Sources */,
 				AD391C3720D16EFA007EE22A /* UIViewController.swift in Sources */,
 				AD391C6220D16F7A007EE22A /* SelectWalletCreationMethodViewController.swift in Sources */,
 				AD391C4E20D16F68007EE22A /* ChannelListViewModel.swift in Sources */,
@@ -2960,7 +3031,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3781C421661A070083CE77 /* Pem.swift in Sources */,
 				AD967FF8210731110048085B /* PinnedURLSessionDelegate.swift in Sources */,
 				ADC48CA92150FBA200949CD9 /* HistoryService.swift in Sources */,
 				AD28844421281FAF003C3D94 /* Bolt11.swift in Sources */,
@@ -2969,12 +3039,9 @@
 				AD3781D02166522E0083CE77 /* Environment.swift in Sources */,
 				ADFEFA6E20E627F100FE1557 /* TransactionService.swift in Sources */,
 				ADFEFA7920E62B1800FE1557 /* BlockChainHeightUpdater.swift in Sources */,
-				AD967FE32105FD770048085B /* BTCPayQRCode.swift in Sources */,
 				ADF0930F2148FA7300B48853 /* CreateInvoiceEvent.swift in Sources */,
-				ADF1BB3021997A820078BCC4 /* LndConnectURL.swift in Sources */,
 				ADFEFA6C20E627F100FE1557 /* InfoService.swift in Sources */,
 				ADA179C82153997B001401F3 /* Persistence.swift in Sources */,
-				AD967FE5210602C10048085B /* BTCPayConfiguration.swift in Sources */,
 				ADF093112148FDC600B48853 /* LightningPaymentEvent.swift in Sources */,
 				ADF093132148FEB900B48853 /* ChannelEvent.swift in Sources */,
 				AD28844321281FAC003C3D94 /* LightningInvoiceURI.swift in Sources */,
@@ -2983,7 +3050,6 @@
 				ADF0930A2147D5FA00B48853 /* Satoshi+Value.swift in Sources */,
 				ADF093062147C72000B48853 /* TransactionEvent.swift in Sources */,
 				ADA179C421527AEA001401F3 /* HistoryEventType.swift in Sources */,
-				AD967FEA2106122E0048085B /* ZapconnectQRCode.swift in Sources */,
 				AD28844521281FBC003C3D94 /* LightningNodeURI.swift in Sources */,
 				AD8FE12B214AD42900C00DF2 /* DateEstimator.swift in Sources */,
 				AD28844B212824DC003C3D94 /* BitcoinInvoice.swift in Sources */,
@@ -2991,7 +3057,6 @@
 				ADFEFA6B20E627F100FE1557 /* ChannelService.swift in Sources */,
 				AD3781CA21664E9E0083CE77 /* LightningConnection.swift in Sources */,
 				ADC0D2F02107953100B8C62F /* PinnedHost.swift in Sources */,
-				AD967FE9210610D90048085B /* RPCConnectQRCode.swift in Sources */,
 				ADFEFA6D20E627F100FE1557 /* LightningService.swift in Sources */,
 				ADFB0CC7216E09E00048B63C /* ReceivingAddress.swift in Sources */,
 			);
@@ -3003,13 +3068,27 @@
 			files = (
 				AD308987216F37E700B5489C /* TransactionServiceTests.swift in Sources */,
 				AD28844921282139003C3D94 /* LightningNodeURITests.swift in Sources */,
-				AD536BF620E62764002279BC /* BTCPayQRCodeTests.swift in Sources */,
 				AD2884472128209B003C3D94 /* LightningInvoiceURITests.swift in Sources */,
 				ADFB0CCA216E34540048B63C /* ReceivingAddressTests.swift in Sources */,
 				AD28844621282073003C3D94 /* Bolt11Tests.swift in Sources */,
-				AD967FE7210603D50048085B /* BTCPayConfigurationTests.swift in Sources */,
 				AD28844D21284DAC003C3D94 /* InvoiceTests.swift in Sources */,
 				ADC48CA7214AD8B800949CD9 /* DateEstimatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA3A85122253DC200B058FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA3A86422253DFC00B058FB /* ZapconnectQRCode.swift in Sources */,
+				AD7123D222267F8300AA8E7B /* Extensions.swift in Sources */,
+				ADA3A86822253F8400B058FB /* BTCPayConfiguration.swift in Sources */,
+				ADA3A86322253DF700B058FB /* Pem.swift in Sources */,
+				ADA3A86722253F7D00B058FB /* RPCConnectQRCode.swift in Sources */,
+				ADA3A86922253F8400B058FB /* BTCPayQRCode.swift in Sources */,
+				ADA3A86622253F0900B058FB /* RPCCredentials.swift in Sources */,
+				AD7123D0222679C400AA8E7B /* Result.swift in Sources */,
+				ADA3A86222253DF400B058FB /* LndConnectURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3118,6 +3197,11 @@
 			isa = PBXTargetDependency;
 			target = AD536BE520E62763002279BC /* Lightning */;
 			targetProxy = AD536BF920E62764002279BC /* PBXContainerItemProxy */;
+		};
+		ADA3A85B22253DC200B058FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA3A85422253DC200B058FB /* LndConnect */;
+			targetProxy = ADA3A85A22253DC200B058FB /* PBXContainerItemProxy */;
 		};
 		ADADAD6E2143B2E700A48E1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3870,6 +3954,92 @@
 			};
 			name = DebugRemote;
 		};
+		ADA3A85E22253DC200B058FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CS73H95RB8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LndConnect/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackmallers.LndConnect;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADA3A85F22253DC200B058FB /* DebugRemote */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CS73H95RB8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LndConnect/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackmallers.LndConnect;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = DebugRemote;
+		};
+		ADA3A86022253DC200B058FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CS73H95RB8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LndConnect/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackmallers.LndConnect;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		ADADAD7A2143B2E700A48E1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BBDA0096476551D268EA826 /* Pods-RPC-SwiftLnd.debug.xcconfig */;
@@ -4254,6 +4424,16 @@
 				AD536BFF20E62764002279BC /* Debug */,
 				AD967FDE210329A70048085B /* DebugRemote */,
 				AD536C0020E62764002279BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA3A86122253DC200B058FB /* Build configuration list for PBXNativeTarget "LndConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA3A85E22253DC200B058FB /* Debug */,
+				ADA3A85F22253DC200B058FB /* DebugRemote */,
+				ADA3A86022253DC200B058FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

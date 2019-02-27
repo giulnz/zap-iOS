@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftLnd
 
 struct BTCPayQRCode {
     let configURL: URL

@@ -7,6 +7,7 @@
 
 import Foundation
 import Lightning
+import LndConnect
 
 extension RPCConnectQRCodeError: LocalizedError {
     public var errorDescription: String? {

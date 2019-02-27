@@ -6,6 +6,7 @@
 //
 
 import Lightning
+import LndConnect
 import SwiftLnd
 import UIKit
 
@@ -127,13 +128,13 @@ extension RootCoordinator: Routing {
     }
 
     private func openRPCConnectURL(_ url: LndConnectURL) {
-        let message = L10n.Scene.ConnectNodeUri.ActionSheet.message(url.rpcConfiguration.url.absoluteString)
+        let message = L10n.Scene.ConnectNodeUri.ActionSheet.message(url.rpcCredentials.host.absoluteString)
         let alertController = UIAlertController(title: L10n.Scene.ConnectNodeUri.ActionSheet.title, message: message, preferredStyle: .actionSheet)
 
         let connectAlertAction = UIAlertAction(title: L10n.Scene.ConnectNodeUri.ActionSheet.connectButton, style: .default, handler: { [weak self] _ in
             guard let self = self else { return }
             self.disconnect()
-            self.presentSetup(walletConfigurationStore: self.walletConfigurationStore, remoteRPCConfiguration: url.rpcConfiguration)
+            self.presentSetup(walletConfigurationStore: self.walletConfigurationStore, remoteRPCConfiguration: url.rpcCredentials.remoteRPCConfiguration)
         })
 
         alertController.addAction(connectAlertAction)

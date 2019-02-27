@@ -7,6 +7,7 @@
 
 import Foundation
 import Lightning
+import LndConnect
 import SwiftBTC
 
 protocol Routing {

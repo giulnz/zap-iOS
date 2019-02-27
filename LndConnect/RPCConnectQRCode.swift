@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftLnd
 
 public enum RPCConnectQRCodeError: Error {
     case btcPayExpired
@@ -16,17 +15,17 @@ public enum RPCConnectQRCodeError: Error {
 
 /// Decodes RPCConfiguration from lndconnect, zapconnect & BTCPay QRCodes
 public enum RPCConnectQRCode {
-    public static func configuration(for string: String, completion: @escaping (Result<RemoteRPCConfiguration, RPCConnectQRCodeError>) -> Void) {
+    public static func configuration(for string: String, completion: @escaping (Result<RPCCredentials, RPCConnectQRCodeError>) -> Void) {
         if let url = URL(string: string),
-            let lndConnectURL = LndConnectURL(url: url) {
-            completion(.success(lndConnectURL.rpcConfiguration))
-        } else if let qrCode = ZapconnectQRCode(json: string) {
-            completion(.success(qrCode.rpcConfiguration))
+            let rpcCredentials = LndConnectURL(url: url)?.rpcCredentials {
+            completion(.success(rpcCredentials))
+        } else if let rpcCredentials = ZapconnectQRCode(json: string)?.rpcCredentials {
+            completion(.success(rpcCredentials))
         } else if let btcPayQRCode = BTCPayQRCode(string: string) {
             btcPayQRCode.fetchConfiguration { result in
-                let mappedResult = result.flatMap { configData -> Result<RemoteRPCConfiguration, RPCConnectQRCodeError> in
-                    if let configuration = BTCPayConfiguration(data: configData)?.rpcConfiguration {
-                        return .success(configuration)
+                let mappedResult = result.flatMap { configData -> Result<RPCCredentials, RPCConnectQRCodeError> in
+                    if let rpcCredentials = BTCPayConfiguration(data: configData)?.grpcConfigurationItem?.rpcCredentials {
+                        return .success(rpcCredentials)
                     } else {
                         return .failure(RPCConnectQRCodeError.btcPayConfigurationBroken)
                     }

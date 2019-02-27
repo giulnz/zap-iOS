@@ -6,23 +6,17 @@
 //
 
 import Foundation
-import SwiftLnd
 
 struct BTCPayConfiguration: Decodable {
     let configurations: [BTCPayConfigurationItem]
 
+    var grpcConfigurationItem: BTCPayConfigurationItem? {
+        return configurations.first(where: { $0.type == "grpc" })
+    }
+
     init?(data: Data) {
         guard let configuration = try? JSONDecoder().decode(BTCPayConfiguration.self, from: data) else { return nil }
         self = configuration
-    }
-
-    var rpcConfiguration: RemoteRPCConfiguration? {
-        guard
-            let item = configurations.first(where: { $0.type == "grpc" }),
-            let url = URL(string: "\(item.host):\(item.port)"),
-            let macaroon = Macaroon(hexadecimalString: item.macaroon)
-            else { return nil }
-        return RemoteRPCConfiguration(certificate: nil, macaroon: macaroon, url: url)
     }
 }
 
@@ -34,4 +28,12 @@ struct BTCPayConfigurationItem: Decodable {
     let ssl: Bool
     let certificateThumbprint: String?
     let macaroon: String
+
+    var rpcCredentials: RPCCredentials? {
+        guard
+            let url = URL(string: "\(host):\(port)"),
+            let macaroon = Data(hexadecimalString: macaroon)
+            else { return nil }
+        return RPCCredentials(certificate: nil, macaroon: macaroon, host: url)
+    }
 }
