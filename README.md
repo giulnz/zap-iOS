@@ -20,7 +20,7 @@ We have an active [slack][slack] channel where you can join the discussion on de
 ## Features
 
 **Wallet**
-- [x] Fiat currency prices
+- [x] Fiat currency pricess
 - [x] Support for Bech32 and P2SH addresses
 - [x] BTC, mBTC, bit & Satoshi units
 - [x] Open `lightning:` & `bitcoin:` urls
